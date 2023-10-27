@@ -4,6 +4,7 @@ import { ProductComponent } from './product/product.component';
 import { CategoryComponent } from './category/category.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedModule } from '../shared/shared.module';
+import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 
 
 
@@ -11,7 +12,8 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     ProductComponent,
     CategoryComponent,
-    DashboardComponent
+    DashboardComponent,
+    NoPageFoundComponent
   ],
   imports: [
     CommonModule,

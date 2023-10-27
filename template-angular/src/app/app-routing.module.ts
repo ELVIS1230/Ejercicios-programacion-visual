@@ -4,6 +4,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { DashboardComponent } from './web/dashboard/dashboard.component';
 import { ProductComponent } from './web/product/product.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { NoPageFoundComponent } from './web/no-page-found/no-page-found.component';
 
 const routes: Routes = [
 {path: 'login', component: LoginComponent},
@@ -11,7 +12,7 @@ const routes: Routes = [
 {path: 'dashboard', component: DashboardComponent},
 {path: 'product', component: ProductComponent},
 {path: '', redirectTo:'/dashboard', pathMatch: 'full'},
-// {path: '**', component: NopagesComponents},
+{path: '**', component: NoPageFoundComponent},
 
 ]
 
