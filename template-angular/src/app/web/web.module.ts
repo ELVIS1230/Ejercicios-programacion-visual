@@ -5,6 +5,9 @@ import { CategoryComponent } from './category/category.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedModule } from '../shared/shared.module';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
+import { WebRoutingRoutingModule } from './web-routing.module';
+import { WebComponent } from './web.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -13,11 +16,23 @@ import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
     ProductComponent,
     CategoryComponent,
     DashboardComponent,
-    NoPageFoundComponent
+    NoPageFoundComponent,
+    WebComponent,
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule,
+    WebRoutingRoutingModule
+  ],
+  exports: [
+    WebComponent,
+    ProductComponent,
+    CategoryComponent,
+    DashboardComponent,
+    NoPageFoundComponent,
+    WebRoutingRoutingModule
+
   ]
 })
 export class WebModule { }
