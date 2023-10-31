@@ -6,8 +6,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedModule } from '../shared/shared.module';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { WebRoutingRoutingModule } from './web-routing.module';
-import { WebComponent } from './web.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { WebComponent } from './web.component';
 
 
 
@@ -17,7 +17,8 @@ import { AppRoutingModule } from '../app-routing.module';
     CategoryComponent,
     DashboardComponent,
     NoPageFoundComponent,
-    WebComponent,
+    WebComponent
+  
   ],
   imports: [
     CommonModule,
@@ -26,13 +27,11 @@ import { AppRoutingModule } from '../app-routing.module';
     WebRoutingRoutingModule
   ],
   exports: [
-    WebComponent,
     ProductComponent,
     CategoryComponent,
     DashboardComponent,
     NoPageFoundComponent,
-    WebRoutingRoutingModule
-
+    WebComponent
   ]
 })
 export class WebModule { }

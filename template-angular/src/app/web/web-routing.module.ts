@@ -6,12 +6,12 @@ import { CategoryComponent } from './category/category.component';
 import { WebComponent } from './web.component';
 
 const routes: Routes = [
-  // {path: 'dashboard/', component: DashboardComponent,
-  {path: 'dashboard', component: DashboardComponent,
-   children: [
+  {path: 'dashboard', component: WebComponent,
+  children: [
+  {path: '', component: DashboardComponent},
   {path: 'product', component: ProductComponent},
   {path: 'category' , component: CategoryComponent}
-]},
+  ]}
   
 ];
 

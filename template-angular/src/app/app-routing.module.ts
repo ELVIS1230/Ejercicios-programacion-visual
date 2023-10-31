@@ -4,19 +4,20 @@ import { NoPageFoundComponent } from './web/no-page-found/no-page-found.componen
 import { WebRoutingRoutingModule } from './web/web-routing.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
 
+
 const routes: Routes = [
-// {path: '', redirectTo:'/dashboard', pathMatch: 'full'},
+{path: '', redirectTo:'/dashboard', pathMatch: 'full'},
+// {path:'dashboard' ,loadChildren: () => import('./web/web-routing.module').then(m =>m.WebRoutingRoutingModule)},
+// {path:'dashboard' ,loadChildren: () => WebRoutingRoutingModule},
 {path: '**', component: NoPageFoundComponent},
 ]
 @NgModule({
-  // declarations: [],
+
   imports: [
     RouterModule.forRoot(routes),
-    // WebModule,
-    WebRoutingRoutingModule, 
+    WebRoutingRoutingModule,
     AuthRoutingModule,
   ],
-  exports: [RouterModule,
-]
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

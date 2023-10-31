@@ -14,12 +14,12 @@ import { AuthRoutingModule } from './auth/auth-routing.module';
   ],
   imports: [
     BrowserModule,
-  SharedModule,
-  WebModule,
-  AuthModule,
+    SharedModule,
+    AuthModule,
+    WebModule,
     AppRoutingModule,
     WebRoutingRoutingModule,
-    AuthRoutingModule
+    AuthRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
