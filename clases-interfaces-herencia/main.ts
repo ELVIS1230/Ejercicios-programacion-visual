@@ -50,7 +50,6 @@ class Avion extends VehiculoAereo {}
 class Avioneta extends VehiculoAereo {}
 
 const camion = new Camion("Volvo", "Rojo" );
-// Clases que heredan de VehiculoAereo
 const avioncito = new Avion("Boeing 747", "Verder");
 const yate = new Yate("Yamaha", "Amarillo" );
 
