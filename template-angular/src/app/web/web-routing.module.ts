@@ -5,10 +5,11 @@ import { ProductComponent } from './product/product.component';
 import { CategoryComponent } from './category/category.component';
 import { WebComponent } from './web.component';
 
+
 const routes: Routes = [
-  {path: 'dashboard', component: WebComponent,
+  {path: 'dashboard', component:DashboardComponent ,
   children: [
-  {path: '', component: DashboardComponent},
+  // {path: '', component: DashboardComponent},
   {path: 'product', component: ProductComponent},
   {path: 'category' , component: CategoryComponent}
   ]}
