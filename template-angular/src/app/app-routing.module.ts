@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NoPageFoundComponent } from './web/no-page-found/no-page-found.component';
 import { WebRoutingRoutingModule } from './web/web-routing.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
+import { ContabilidadRoutingModule } from './contabilidad/contabilidad-routing.module';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     WebRoutingRoutingModule,
     AuthRoutingModule,
+    ContabilidadRoutingModule
   ],
   exports: [RouterModule]
 })

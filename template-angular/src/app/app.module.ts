@@ -7,16 +7,20 @@ import { WebModule } from './web/web.module';
 import { AuthModule } from './auth/auth.module';
 import { WebRoutingRoutingModule } from './web/web-routing.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
+import { ContabilidadModule } from './contabilidad/contabilidad.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,
     SharedModule,
     AuthModule,
     WebModule,
+    ContabilidadModule,
     AppRoutingModule,
     WebRoutingRoutingModule,
     AuthRoutingModule,
