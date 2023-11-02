@@ -7,10 +7,13 @@ import { WebModule } from './web/web.module';
 import { AuthModule } from './auth/auth.module';
 import { WebRoutingRoutingModule } from './web/web-routing.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
+import { ReportesModule } from './reportes/reportes.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -20,6 +23,7 @@ import { AuthRoutingModule } from './auth/auth-routing.module';
     AppRoutingModule,
     WebRoutingRoutingModule,
     AuthRoutingModule,
+    ReportesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
