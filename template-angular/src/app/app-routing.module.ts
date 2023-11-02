@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { NoPageFoundComponent } from './web/no-page-found/no-page-found.component';
 import { WebRoutingRoutingModule } from './web/web-routing.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
-import { ReportedRoutingModule } from './reported/reported-routing.module';
 
 
 const routes: Routes = [
