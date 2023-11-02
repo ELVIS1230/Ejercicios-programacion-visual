@@ -4,6 +4,7 @@ import { NoPageFoundComponent } from './web/no-page-found/no-page-found.componen
 import { WebRoutingRoutingModule } from './web/web-routing.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
 import { ReportesRoutingModule } from './reportes/reportes-routing.module';
+import { ContabilidadRoutingModule } from './contabilidad/contabilidad-routing.module';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     WebRoutingRoutingModule,
     AuthRoutingModule,
-    ReportesRoutingModule
+    ReportesRoutingModule,
+    ContabilidadRoutingModule
   ],
   exports: [RouterModule]
 })

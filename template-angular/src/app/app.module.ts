@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import { WebRoutingRoutingModule } from './web/web-routing.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
 import { ReportesModule } from './reportes/reportes.module';
+import { ContabilidadModule } from './contabilidad/contabilidad.module';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { ReportesModule } from './reportes/reportes.module';
     SharedModule,
     AuthModule,
     WebModule,
+    ContabilidadModule,
     AppRoutingModule,
     WebRoutingRoutingModule,
     AuthRoutingModule,
