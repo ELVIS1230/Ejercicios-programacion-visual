@@ -19,8 +19,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes),
     WebRoutingRoutingModule,
-    AuthRoutingModule,
-    ReportedRoutingModule
+    AuthRoutingModule
   ],
   exports: [RouterModule]
 })
